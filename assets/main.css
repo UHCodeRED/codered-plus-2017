@@ -158,12 +158,12 @@ a {
   opacity: 0.5;
 }
 
-.w-no-touch .bg-text {
+.w-mod-no-touch .bg-text {
   height: 100vh;
   transform: translateZ(-1px) scale(2);
 }
 
-.w-no-touch .parallax {
+.w-mod-no-touch .parallax {
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;

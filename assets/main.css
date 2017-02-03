@@ -12,6 +12,9 @@
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
+html {
+  height: 100%;
+}
 body {
   background-color: #243b55;
   background-image: url("./overlay.png"), -webkit-linear-gradient(270deg, #141e30, #243b55);
@@ -20,7 +23,9 @@ body {
   font-family: 'Roboto Mono', Inconsolata, monospace;
   color: #333;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.5;
+  background-repeat: repeat, no-repeat;
+  background-attachment: static, fixed;
 }
 
 h2 {
@@ -39,8 +44,14 @@ h3 {
   font-weight: bold;
 }
 
-a {
-  text-decoration: underline;
+a:link, a:visited {
+  text-decoration: none;
+  border-bottom: 2px solid #c8102e;
+  color: #c8102e;
+}
+
+a:link:hover, a:visited:hover {
+  color: #88102e;
 }
 
 .logo {
@@ -95,7 +106,6 @@ a {
 .action-button {
   padding: 16px 32px;
   border: 5px solid #c8102e;
-  /*background-color: transparent;*/
   background-color: rgba(20,30,48,0.5);
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -160,6 +170,7 @@ a {
   background-repeat: repeat-y;
   background-attachment: scroll;
   opacity: 0.5;
+  transition: opacity 3000ms;
 }
 
 .w-mod-no-touch .bg-text {
@@ -256,16 +267,12 @@ a {
 .sponsor-logo {
   display: block;
   margin: 10px auto;
+  max-width: 200px;
 }
 
-html.w-mod-js *[data-ix="logo"] {
-  opacity: 0;
-  -webkit-transform: translate(0px, 32px) scale(0.95, 0.95);
-  -ms-transform: translate(0px, 32px) scale(0.95, 0.95);
-  transform: translate(0px, 32px) scale(0.95, 0.95);
-}
-
-html.w-mod-js *[data-ix="sub-head"] {
+html.w-mod-js *[data-ix="logo"],
+html.w-mod-js *[data-ix="sub-head"],
+html.w-mod-js *[data-ix="main-content"] {
   opacity: 0;
   -webkit-transform: translate(0px, 32px) scale(0.95, 0.95);
   -ms-transform: translate(0px, 32px) scale(0.95, 0.95);
@@ -284,13 +291,6 @@ html.w-mod-js *[data-ix="right-action-button"] {
   -webkit-transform: translate(-32px, 32px) scale(0.95, 0.95);
   -ms-transform: translate(-32px, 32px) scale(0.95, 0.95);
   transform: translate(-32px, 32px) scale(0.95, 0.95);
-}
-
-html.w-mod-js *[data-ix="main-content"] {
-  opacity: 0;
-  -webkit-transform: translate(0px, 32px) scale(0.95, 0.95);
-  -ms-transform: translate(0px, 32px) scale(0.95, 0.95);
-  transform: translate(0px, 32px) scale(0.95, 0.95);
 }
 
 html.w-mod-js *[data-ix="bg-text"] {
@@ -318,6 +318,7 @@ html.w-mod-js *[data-ix="bg-text"] {
   transition: transform 500ms ease-out;
   user-select: none;
   -moz-user-select: none;
+  border: none;
 }
 
 #mlh-trust-badge:hover {
@@ -366,6 +367,11 @@ html.w-mod-js *[data-ix="bg-text"] {
   .content-section {
     padding: 30px;
   }
+  .content-top-triangle {
+    -webkit-transform: translate(-32px, -32px) rotate(45deg) scale(0.75);
+    -ms-transform: translate(-32px, -32px) rotate(45deg) scale(0.75);
+    transform: translate(-32px, -32px) rotate(45deg) scale(0.75);
+  }
   #mlh-trust-badge {
     transform: translateY(-40px);
   }
@@ -407,5 +413,10 @@ html.w-mod-js *[data-ix="bg-text"] {
   }
   .content-section {
     padding: 20px;
+  }
+  .content-top-triangle {
+    -webkit-transform: translate(-32px, -32px) rotate(45deg) scale(0.5);
+    -ms-transform: translate(-32px, -32px) rotate(45deg) scale(0.5);
+    transform: translate(-32px, -32px) rotate(45deg) scale(0.5);
   }
 }

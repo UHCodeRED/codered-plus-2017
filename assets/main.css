@@ -143,16 +143,8 @@ a {
   text-transform: uppercase;
 }
 
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
 .bg-text {
   position: absolute;
-  height: 100vh;
   left: 0px;
   top: 0px;
   right: 0px;
@@ -164,7 +156,18 @@ a {
   background-repeat: repeat-y;
   background-attachment: scroll;
   opacity: 0.5;
+}
+
+.w-no-touch .bg-text {
+  height: 100vh;
   transform: translateZ(-1px) scale(2);
+}
+
+.w-no-touch .parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .content-text {
@@ -290,14 +293,6 @@ html.w-mod-js *[data-ix="bg-text"] {
 }
 
 @media (max-width: 991px) {
-  .parallax {
-    perspective: none;
-    height: auto;
-  }
-  .bg-text {
-    height: auto;
-    transform: none;
-  }
   .main-content {
     margin-right: 52px;
     margin-left: 52px;

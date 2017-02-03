@@ -46,6 +46,8 @@ a {
 .logo {
   display: block;
   margin: 160px auto 64px;
+  user-select: none;
+  -moz-user-select: none;
 }
 
 .subtitle {
@@ -86,6 +88,8 @@ a {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  user-select: none;
+  -moz-user-select: none;
 }
 
 .action-button {
@@ -189,6 +193,8 @@ a {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  user-select: none;
+  -moz-user-select: none;
 }
 
 .nav-link {
@@ -249,8 +255,7 @@ a {
 
 .sponsor-logo {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 10px auto;
 }
 
 html.w-mod-js *[data-ix="logo"] {
@@ -290,6 +295,33 @@ html.w-mod-js *[data-ix="main-content"] {
 
 html.w-mod-js *[data-ix="bg-text"] {
   opacity: 0;
+}
+
+::-moz-selection {
+  background: #c8102e;
+  color: #efdbd0;
+}
+::selection {
+  background: #c8102e;
+  color: #efdbd0;
+}
+
+#mlh-trust-badge {
+  display: block;
+  max-width: 100px;
+  min-width: 60px;
+  position: fixed;
+  right: 50px;
+  top: 0;
+  width: 10%;
+  z-index: 10000;
+  transition: transform 500ms ease-out;
+  user-select: none;
+  -moz-user-select: none;
+}
+
+#mlh-trust-badge:hover {
+  transform: translateY(0px);
 }
 
 @media (max-width: 991px) {
@@ -333,6 +365,9 @@ html.w-mod-js *[data-ix="bg-text"] {
   }
   .content-section {
     padding: 30px;
+  }
+  #mlh-trust-badge {
+    transform: translateY(-40px);
   }
 }
 

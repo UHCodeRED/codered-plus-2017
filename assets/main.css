@@ -14,10 +14,10 @@
    ========================================================================== */
 body {
   background-color: #243b55;
-  background-image: url("http://uploads.webflow.com/5894105efb85a5a045cdc7d6/589411cb9fe53dc857652a45_overlay.png"), -webkit-linear-gradient(270deg, #141e30, #243b55);
-  background-image: url("http://uploads.webflow.com/5894105efb85a5a045cdc7d6/589411cb9fe53dc857652a45_overlay.png"), linear-gradient(180deg, #141e30, #243b55);
+  background-image: url("./overlay.png"), -webkit-linear-gradient(270deg, #141e30, #243b55);
+  background-image: url("./overlay.png"), linear-gradient(180deg, #141e30, #243b55);
   background-position: 50% 0px, 0px 0px;
-  font-family: Inconsolata, monospace;
+  font-family: 'Roboto Mono', Inconsolata, monospace;
   color: #333;
   font-size: 20px;
   line-height: 1.2;
@@ -159,7 +159,7 @@ a {
   bottom: 0px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url("http://uploads.webflow.com/5894105efb85a5a045cdc7d6/589454fcf05ecfba7c2c9ebe_text-bg.svg");
+  background-image: url("./text-bg.svg");
   background-position: 50% 0px;
   background-repeat: repeat-y;
   background-attachment: scroll;
@@ -290,6 +290,14 @@ html.w-mod-js *[data-ix="bg-text"] {
 }
 
 @media (max-width: 991px) {
+  .parallax {
+    perspective: none;
+    height: auto;
+  }
+  .bg-text {
+    height: auto;
+    transform: none;
+  }
   .main-content {
     margin-right: 52px;
     margin-left: 52px;

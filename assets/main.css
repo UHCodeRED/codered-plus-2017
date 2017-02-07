@@ -105,10 +105,11 @@ p a:link:hover, p a:visited:hover {
   -moz-user-select: none;
 }
 
-.action-button {
+.button {
   padding: 16px 32px;
   border: 5px solid #c8102e;
-  background-color: rgba(20,30,48,0.5);
+  color: #c8102e;
+  background: transparent;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -117,7 +118,6 @@ p a:link:hover, p a:visited:hover {
   transition: transform 200ms cubic-bezier(.175, .885, .32, 1.275), background-color 200ms cubic-bezier(.19, 1, .22, 1);
   transition: transform 200ms cubic-bezier(.175, .885, .32, 1.275), background-color 200ms cubic-bezier(.19, 1, .22, 1), -webkit-transform 200ms cubic-bezier(.175, .885, .32, 1.275);
   font-family: Rubik, sans-serif;
-  color: #efdbd0;
   font-size: 24px;
   line-height: 1;
   font-weight: 500;
@@ -126,11 +126,27 @@ p a:link:hover, p a:visited:hover {
   cursor: pointer;
 }
 
-.action-button:active {
+.button:focus {
+  outline: none;
+  border: 5px solid #c8102e !important;
+}
+
+.button:active {
+  border: 5px solid #c8102e;
+  color: #efdbd0;
   background-color: #c8102e;
   -webkit-transform: scale(0.85);
   -ms-transform: scale(0.85);
   transform: scale(0.85);
+}
+
+.action-button {
+  background-color: rgba(20,30,48,0.5);
+  color: #efdbd0;
+}
+
+input[type=radio] {
+    border-radius: 50%;
 }
 
 .content-top {
@@ -336,6 +352,10 @@ html.w-mod-js *[data-ix="bg-text"] {
 
 #mlh-trust-badge:hover {
   transform: translateY(0px);
+}
+
+#mc_embed_signup {
+  clear: left;
 }
 
 @media (max-width: 991px) {

@@ -44,13 +44,13 @@ h3 {
   font-weight: bold;
 }
 
-a:link, a:visited {
+p a:link, p a:visited {
   text-decoration: none;
   border-bottom: 2px solid #c8102e;
   color: #c8102e;
 }
 
-a:link:hover, a:visited:hover {
+p a:link:hover, p a:visited:hover {
   color: #88102e;
 }
 
@@ -59,6 +59,8 @@ a:link:hover, a:visited:hover {
   margin: 160px auto 64px;
   user-select: none;
   -moz-user-select: none;
+  background-color: rgba(20,30,48,0.5); 
+  box-shadow: rgba(20,30,48,0.5) 0px 0px 32px 16px;
 }
 
 .subtitle {

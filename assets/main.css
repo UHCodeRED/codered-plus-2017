@@ -212,12 +212,23 @@ p a:link:hover, p a:visited:hover {
 
 .nav-link {
   padding-bottom: 15px;
-  border-bottom: 5px solid transparent;
   color: #c8102e;
+  position: relative;
 }
 
-.nav-link:hover {
-  border-bottom: 5px solid #c8102e;
+.nav-link .indicator {
+    height: 5px;
+    width: 100%;
+    background-color: #c8102e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.2s cubic-bezier(.175, .885, .32, 1.275);
+}
+
+.nav-link:hover .indicator {
+    transform: scaleX(1);
 }
 
 .content-top-triangle {

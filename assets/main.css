@@ -260,6 +260,7 @@ input[type=radio] {
 
 .content-section hr {
   display: block;
+  border: none;
   width: 64px;
   height: 3px;
   margin: 16px auto;

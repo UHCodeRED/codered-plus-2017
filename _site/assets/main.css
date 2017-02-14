@@ -397,12 +397,12 @@ hr {
   // font-weight: bold;
 }
 
-.footer a:link {
+.footer a:link, .footer a:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.footer a:link:hover {
+.footer a:link:hover, .footer a:visited:hover {
   color: #f5f5f5;
 }
 

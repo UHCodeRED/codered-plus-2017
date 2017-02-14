@@ -1,0 +1,59 @@
+- first_name: Andy
+  last_name: Hinh
+  role: Executive Director
+  email: andy.hinh@cougarcs.com
+  photo: img/andy.jpg
+
+- first_name: Andrew
+  last_name: Lehmann
+  role: Co-Executive Director
+  email: andrew.lehmann@cougarcs.com
+  photo: img/andrew.jpg
+
+- first_name: Lauren
+  last_name: O'neal
+  role: Co-Executive Director
+  email: lauren.oneal@cougarcs.com
+  photo: img/lauren.jpg
+
+- first_name: Syed
+  last_name: Raza
+  role: Sponsorship Director
+  email: syed.raza@cougarcs.com
+  photo: img/syed.jpg
+
+- first_name: Maxwell
+  last_name: Ciotti
+  role: Designer
+  email: maxwell.ciotti@cougarcs.com
+  photo: img/max.jpg
+
+- first_name: Cesar
+  last_name: Salazar
+  role: Volunteering Co-Director
+  email: cesar.salazar@cougarcs.com
+  photo: img/cesar.jpg
+
+- first_name: Hayaan
+  last_name: Merchant
+  role: Volunteering Co-Director
+  email: 
+  photo: img/hayaan.jpg
+
+- first_name: Kevin
+  last_name: Portillo
+  role: Catering Director
+  email: 
+  photo: img/kevin.jpg
+
+- first_name: Kyle
+  last_name: Johnston
+  role: Logistics Director
+  email: kyle.johnston@cougarcs.com
+  photo: img/kyle.jpg
+
+- first_name: Ryan
+  last_name: Gonzalez
+  role: Communications Director
+  email: 
+  photo: img/ryan.jpg

@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="parallax">
+  <div class="bg-text" data-ix="bg-text"></div>
+  <div class="container w-container" id="top">
+
+    <header>
+      {% include header.html %}
+    </header>
+
+    <div class="page float-in" data-ix="main-content">
+      <div class="content-top"></div>
+
+      {{ content }}
+
+    </div><!--.page-->
+
+    {% include footer.html %}
+
+  </div><!--.container-->
+</div><!--.parallax-->

@@ -233,6 +233,10 @@ input[type=radio] {
   border-bottom: 1px solid #efdbd0;
 }
 
+.content-section.centered {
+  text-align: center;
+}
+
 .content-section h2 {
   font-family: Rubik, sans-serif;
   color: #c8102e;
